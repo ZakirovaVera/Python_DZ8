@@ -9,13 +9,13 @@ def data_comm():
     while number != 0:
         number = menu.view()
         if number == 1:
-            dm.show(data) # Вывод бд
+            dm.show(data)  # Вывод бд
         if number == 2:
-            dm.get_add_key(data) # Добавить новое поле
+            dm.get_add_key(data)  # Добавить новое поле
         if number == 3:
-            dm.get_add_user(data) # Добавить учетную запись
+            dm.get_add_user(data)  # Добавить учетную запись
         if number == 4:
-            dm.get_user_search(data) # Поиск пользователя
+            dm.get_user_search(data)  # Поиск пользователя
         js.write_in_file(data)
         print()
 
